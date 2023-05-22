@@ -15,7 +15,7 @@ variables:
   webAppName: 'myappnamerudyli'
 
   # Environment name
-  environmentName: ''
+  environmentName: 'myenv'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
