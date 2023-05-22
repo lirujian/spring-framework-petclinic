@@ -18,7 +18,7 @@ variables:
   environmentName: 'myenv'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: 'windows-latest'
 
 stages:
 - stage: Build
@@ -34,7 +34,7 @@ stages:
       displayName: 'Maven Package'
       inputs:
         mavenPomFile: 'pom.xml'
-        goals: 'package -e'
+        goals: 'package'
 
     - task: CopyFiles@2
       displayName: 'Copy Files to artifact staging directory'
